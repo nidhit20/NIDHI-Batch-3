@@ -14,7 +14,7 @@ function LoginPage() {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        axios.post('http://localhost:5050/api/userlogin', {email, password})
+        axios.post('http://localhost:5173/api/userlogin', {email, password})
         .then(result => {
             console.log(result);
             if(result.data === "Success") {
